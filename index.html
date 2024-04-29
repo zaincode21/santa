@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Form</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <div class="container mx-auto py-8">
+        <div class="max-w-md mx-auto bg-white rounded-md p-8 shadow-md relative overflow-hidden">
+            <h2 class="text-2xl font-semibold mb-4">Pharmacy Form</h2>
+            <form method="post" action="">
+                <!-- Button container with animation -->
+                <div class="flex justify-between mt-6 animate-slide-down-stop">
+                    <!-- Button 1 -->
+                    <a href="taker.html" class="inline-block bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-300 focus:outline-none focus:bg-red-600">Abahabwa imiti</a>
+                    <!-- Button 2 -->
+                    <a href="decision.html" class="inline-block bg-yellow-500 text-white px-4 py-2 rounded-md hover:bg-yellow-600 focus:outline-none focus:bg-indigo-600">New Drugs</a>
+                    <!-- Button 3 -->
+                    <a href="report.html" class="inline-block bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600 focus:outline-none focus:bg-indigo-600">Report</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Animation -->
+    <style>
+        @keyframes slide-down {
+            0% {
+                transform: translateY(-100%);
+            }
+            50% {
+                transform: translateY(0);
+            }
+        }
+        .animate-slide-down-stop {
+            animation: slide-down 1s ease forwards;
+        }
+    </style>
+</body>
+
+</html>

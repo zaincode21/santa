@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Patients</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <div class="container mx-auto py-8">
+        <div class="max-w-4xl mx-auto bg-white rounded-md p-8 shadow-md">
+            <h2 class="text-2xl font-semibold mb-4">List of Patients</h2>
+            <div class="overflow-x-auto">
+                <canvas id="barChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- JavaScript to create the bar chart -->
+    <script>
+        // Sample data for the chart
+        const data = {
+            labels: ['Drug 1', 'Drug 2'],
+            datasets: [{
+                label: 'Package Size',
+                backgroundColor: [
+                    'rgba(79, 70, 229, 0.5)',
+                    'rgba(79, 70, 229, 0.5)'
+                ],
+                borderColor: [
+                    'rgba(79, 70, 229, 1)',
+                    'rgba(79, 70, 229, 1)'
+                ],
+                borderWidth: 1,
+                data: [2000, 1500] // Sample package sizes
+            }]
+        };
+
+        // Configuration options
+        const options = {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        };
+
+        // Get the canvas element
+        const ctx = document.getElementById('barChart').getContext('2d');
+
+        // Create the bar chart
+        const myChart = new Chart(ctx, {
+            type: 'bar',
+            data: data,
+            options: options
+        });
+    </script>
+</body>
+
+</html>

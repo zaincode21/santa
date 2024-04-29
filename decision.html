@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Form</title>
+  
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <div class="container mx-auto py-8">
+        <div class="max-w-3xl mx-auto bg-white rounded-md p-8 shadow-md">
+            <h2 class="text-2xl font-semibold mb-4">Pharmacy Form</h2>
+            <form>
+                <div class="grid grid-cols-2 gap-4">
+                    <!-- Input 1 -->
+                    <div>
+                        <label for="name" class="block  text-gray-700">Name</label>
+                        <input type="text" id="name" name="name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                    </div>
+                    <!-- Input 2 -->
+                    <div>
+                        <label for="unit" class="block  text-gray-700">Unit</label>
+                        <input type="number" id="unit" name="unit" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                    </div>
+                    <!-- Input 3 -->
+                    <div>
+                        <label for="phone" class="block   text-gray-700">Package size</label>
+                        <input type="tel" id="phone" name="phone" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                    </div>
+                    <!-- Input 4 -->
+                    <div>
+                        <label for="bacth" class="block  text-gray-700">Batch N <sup>o</sup></label>
+                        <input type="text" id="batch" name="batch" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                    </div>
+                    <!-- Input 5 -->
+                    <div>
+                        <label for="expiry" class="block   text-gray-700">expiry date</label>
+                        <input type="text" id="expiry" name="expiry" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                    </div>
+                   
+                </div>
+                <div class="flex items-center justify-between mt-4">
+                    <button type="submit" class="inline-block bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600 focus:outline-none focus:bg-indigo-600">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

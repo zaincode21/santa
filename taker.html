@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Patients</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <div class="container mx-auto py-8">
+        <div class="max-w-4xl mx-auto bg-white rounded-md p-8 shadow-md">
+            <h2 class="text-2xl font-semibold mb-4">List of Patients</h2>
+            <div class="overflow-x-auto">
+                <table class="table-auto w-full">
+                    <thead>
+                        <tr>
+                            <th class="px-4 py-2">ID</th>
+                            <th class="px-4 py-2">Name</th>
+                            <th class="px-4 py-2">Age</th>
+                            <th class="px-4 py-2">ID N <sup>0</sup></th>
+                            <th class="px-4 py-2">Drugs</th>
+                            <th class="px-4 py-2">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Example rows, replace with dynamic data -->
+                        <tr>
+                            <td class="border px-4 py-2">1</td>
+                            <td class="border px-4 py-2">Jane Smith</td>
+                            <td class="border px-4 py-2">42</td>
+                            <td class="border px-4 py-2">1200080041250105</td>
+                            <td class="border px-4 py-2">Quariteme</td>
+                            <td class="border px-4 py-2">
+                                <!-- Modified button with onclick event -->
+                                <button onclick="showApprovalMessage()" class="inline-block bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600 focus:outline-none focus:bg-indigo-600">Take Drug</button>
+                            </td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript to show pop-up message -->
+    <script>
+        function showApprovalMessage() {
+            // Show pop-up message using window.alert
+            window.alert("Drug approved!");
+        }
+    </script>
+</body>
+
+</html>
